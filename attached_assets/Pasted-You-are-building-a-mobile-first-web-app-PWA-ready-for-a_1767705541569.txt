@@ -1,0 +1,135 @@
+You are building a mobile-first web app (PWA-ready) for a female fitness coach and private gym.
+
+Project name:
+Saba Gym Studio
+
+Inspiration & data source:
+- Instagram page: https://www.instagram.com/sabagymstudio
+- Use the tone, services, and positioning inspired by this page (female-only, private gym, strength & body shaping)
+- Do NOT scrape automatically; manually infer content style and services
+
+Branding & UI:
+- Primary color: Dusty Pink (muted pink / pink-beige)
+- Secondary colors: soft cream, light gray, dark mauve accents
+- Style: modern, feminine, minimal, motivational
+- Rounded cards, soft gradients, smooth shadows
+- Icons should be clean, outline or soft-filled style
+- Typography must support Persian (RTL)
+
+Language:
+- Entire UI must be in Persian (Farsi)
+- RTL layout everywhere
+
+Logo usage:
+- Use the provided logo as:
+  1) App logo inside the Home page (top section)
+  2) PWA icon (Add to Home Screen icon)
+- App name for home screen:
+  "Saba Gym Studio"
+
+Core pages:
+1) Home
+2) Services
+3) Request Program / Class
+4) Contact
+
+--------------------------------
+HOME PAGE
+--------------------------------
+- Logo at top
+- Title:
+  "Saba Gym Studio"
+- Subtitle:
+  "باشگاه خصوصی بانوان | تمرین هدفمند، بدن قوی‌تر"
+- Short intro text:
+  "اینجا جاییه که قراره نسخه قوی‌تر و سالم‌تری از خودت بسازی"
+
+- CTA buttons:
+  - "دریافت برنامه ورزشی"
+  - "درخواست کلاس"
+
+--------------------------------
+SERVICES PAGE
+--------------------------------
+Service cards (Persian):
+- برنامه تمرینی اختصاصی
+- کلاس خصوصی حضوری
+- تمرینات چربی‌سوزی
+- فرم‌دهی و عضله‌سازی
+- اصلاح فرم بدن
+- تمرینات ویژه بانوان
+
+--------------------------------
+REQUEST PROGRAM / CLASS PAGE
+--------------------------------
+Create a detailed form with these fields:
+
+Required fields:
+- نام و نام خانوادگی
+- شماره تماس
+- سن
+- قد (سانتی‌متر)
+- وزن (کیلوگرم)
+- هدف اصلی (چربی‌سوزی، عضله‌سازی، تناسب اندام، آمادگی جسمانی)
+- سابقه ورزشی (مبتدی / متوسط / حرفه‌ای)
+- ورزش‌هایی که قبلاً انجام داده
+- آسیب‌دیدگی یا محدودیت جسمی (در صورت وجود)
+- نوع درخواست:
+  - برنامه ورزشی
+  - کلاس خصوصی
+  - مشاوره
+
+Optional fields:
+- تعداد جلسات موردنظر در هفته
+- توضیحات تکمیلی
+
+--------------------------------
+WHATSAPP INTEGRATION (VERY IMPORTANT)
+--------------------------------
+- On form submit:
+  - DO NOT process payments
+  - Generate a formatted WhatsApp message
+  - Open WhatsApp chat automatically
+
+WhatsApp message format (Persian):
+
+"سلام 👋
+من درخواست برنامه/کلاس دارم:
+
+نام و نام خانوادگی: {{fullName}}
+سن: {{age}}
+قد: {{height}}
+وزن: {{weight}}
+هدف: {{goal}}
+سابقه ورزشی: {{experience}}
+ورزش‌های قبلی: {{sportsHistory}}
+آسیب‌دیدگی: {{injuries}}
+نوع درخواست: {{requestType}}
+توضیحات: {{notes}}"
+
+--------------------------------
+CONTACT PAGE
+--------------------------------
+- WhatsApp contact button (primary)
+- Instagram button linking to sabagymstudio
+- Simple motivational footer text
+
+--------------------------------
+TECH RULES
+--------------------------------
+- Mobile-first
+- Fast load
+- No splash screen
+- No onboarding
+- App must open directly on Home
+- No unnecessary animations
+- Clean routing
+- Persian font applied globally
+- PWA-ready (Add to Home Screen works)
+
+--------------------------------
+FINAL NOTES
+--------------------------------
+- Keep everything simple and conversion-focused
+- Target audience: women looking for private gym & personal training
+- Emotional tone: supportive, confident, motivating
