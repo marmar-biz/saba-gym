@@ -1,0 +1,101 @@
+TASK: Create a smart form that sends collected user data to WhatsApp as a single structured message.
+
+WHATSAPP NUMBER:
++989118323963
+
+WHATSAPP API LINK:
+https://wa.me/989118323963
+
+FORM LOCATION:
+- Place the form on a dedicated page OR open it when user clicks:
+  "دریافت برنامه ورزشی"
+
+FORM FIELDS (ALL REQUIRED):
+
+1. Full Name
+- Label (Persian): "نام و نام خانوادگی"
+- Input type: text
+
+2. Phone Number
+- Label (Persian): "شماره تماس"
+- Input type: tel
+
+3. Age
+- Label (Persian): "سن"
+- Input type: number
+
+4. Weight
+- Label (Persian): "وزن (کیلوگرم)"
+- Input type: number
+
+5. Height
+- Label (Persian): "قد (سانتی‌متر)"
+- Input type: number
+
+6. Training Background
+- Label (Persian): "سابقه ورزشی (هر ورزشی که قبلاً انجام داده‌اید)"
+- Input type: textarea
+- Placeholder (Persian): "مثال: بدنسازی، پیلاتس، یوگا، بدون سابقه…"
+
+7. Class Type (Radio buttons)
+- Label (Persian): "نوع کلاس"
+- Options:
+  - "خصوصی"
+  - "نیمه خصوصی"
+
+8. Training Days (Radio buttons – choose ONE group)
+- Label (Persian): "روزهای کلاس"
+
+Option A:
+- "شنبه – دوشنبه – چهارشنبه"
+
+Option B:
+- "یکشنبه – سه‌شنبه – پنج‌شنبه"
+
+SUBMIT BUTTON:
+- Text (Persian): "ارسال اطلاعات در واتساپ"
+- Icon: WhatsApp
+- Color: use existing dusty pink theme
+- On click:
+  → Open WhatsApp link with pre-filled message
+  → Open in new tab
+
+WHATSAPP MESSAGE FORMAT (IMPORTANT):
+
+سلام 👋  
+من برای دریافت برنامه ورزشی و ثبت کلاس اقدام کردم.
+
+نام و نام خانوادگی: {FullName}  
+شماره تماس: {Phone}  
+سن: {Age}  
+وزن: {Weight} کیلو  
+قد: {Height} سانتی‌متر  
+
+سابقه ورزشی:
+{TrainingBackground}
+
+نوع کلاس: {ClassType}  
+روزهای انتخابی: {TrainingDays}
+
+🙏 ممنون
+
+ENCODE the message properly for WhatsApp URL.
+
+MOBILE BEHAVIOR:
+- On mobile, WhatsApp app must open directly
+- On desktop, WhatsApp Web opens
+
+VALIDATION RULES:
+- Do NOT allow submit if any field is empty
+- Show Persian validation messages
+
+DO NOT:
+- Do NOT store data in database
+- Do NOT send emails
+- Do NOT add new dependencies
+- Do NOT change existing layout structure
+
+FINAL CHECK:
+- Message is clean and readable in WhatsApp
+- Persian text displays correctly
+- Works on iOS, Android, Desktop
