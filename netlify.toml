@@ -1,4 +1,8 @@
 [build]
-  base = "client"
-  command = "npm run build"
+  command = "npm --prefix client run build"
   publish = "client/dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
